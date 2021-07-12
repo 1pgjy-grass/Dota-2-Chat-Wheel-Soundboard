@@ -1,47 +1,37 @@
 # Dota-2-Chat-Wheel-Soundboard
-This is a small project to re-integrate chat wheel sounds to Dota 2.
-I created a soundboard that plays all compendium chat wheel sounds via ingame voice chat to you and your teammates.
+This is a modification to [Dota-2-Chat-Wheel-Soundboard](https://github.com/derdanielb/Dota-2-Chat-Wheel-Soundboard) created by derdanielb. Now it gives you ability to specify sounds (avi format only) you want play in game.
 
-![Soundboard](https://github.com/derdanielb/Dota-2-Chat-Wheel-Soundboard/raw/master/readme/application.png "Soundboard")
+![Soundboard](./ChatWheelSoundboard/application.png "Soundboard")
 
 ## Installation
 For this setup two downloads are needed: The soundboard and an audio driver.
 ### Downloads
 
-1. Download the precompiled [Chat Wheel Soundboard](https://github.com/derdanielb/Dota-2-Chat-Wheel-Soundboard/releases/download/1.0/ChatWheelSoundboard.zip)
-2. Download the tool [VB-Audio Virtual Cable](https://www.vb-audio.com/Cable/index.htm#DownloadCable)
+1. Download the precompiled [Chat Wheel Soundboard](./ChatWheelSoundboard.zip)
+2. Download the tool [VB-Audio Virtual Cable](https://vb-audio.com/Cable/index.htm)
 (Any other audio tool that can send playback sound to a recording device will work)
 
-### Setup (5 Steps)
+### Setup (4 Steps)
 
 *Please remember your previous settings if change anything.*
 
-1. __Install the **VB-Audio Virtual Cable**:__ 
+1. __install the VB-Audio Virtual Cable:__
 Setup requires to be run in Administrator Mode. Please refer to tool documentation (actually it is only a one-button-installation).
 NOTE: Any other audio tool that can emulate playback sound to a recording source will work aswell.
 
 
-2. __Change your steam voice recording device:__
-Go to your Steam Settings>Voice> click 'Change device'. Windows sound manager will popup. 
+2. __set system's sound setting:__
+Right click the volumn icon in task bar to open sound setting dialog. Make sure virtual cable output is set as default device in recording tab. 
+![system-sound-setting-1](./ChatWheelSoundboard/system-sound-setting-1.png "system-sound-setting-1")</br>
+Also make sure your real audio device is set as default device in playback tab. ![system-sound-setting-2](./ChatWheelSoundboard/system-sound-setting-2.png "system-sound-setting-2")
 
-![Steam settings](https://github.com/derdanielb/Dota-2-Chat-Wheel-Soundboard/raw/master/readme/steam_audio.png "Steam settings")
+3. __run chatWheelSoundboard.exe and config__
+![application-setting](./ChatWheelSoundboard/application-setting.png "application-setting")
 
+4. __set dota2's audio setting__
+![dota2-audio-setting](./ChatWheelSoundboard/dota2-audio-setting.png "dota2-audio-setting")
 
-3. __Set virtual cable as default:__
-Set **'CABLE Output'** as your *standard device* and also as *standard communication device*
-![Windows sound manager](https://github.com/derdanielb/Dota-2-Chat-Wheel-Soundboard/raw/master/readme/windows_sound.png "Windows sound manager")
-
-When you are done, in *Steam>Settings>Voice* click *'Detect Audio devices'*. This should set your steam recording device to 'CABLE Output' as it can be seen in screenshot from step 2). 
-
-
-4. __Start ChatWheelSoundboard.exe:__
-Figure out the correct 'Mic device' on the left hand side of the soundboard.
-Usually the largest number is the most recently installed device (which should be the virtual cable tool).
-You can check your selection by watching the indicator bar at windows sound manager (step 3) or steam microphone test (step 2) when playing a sound.
-
-5. __Enable Dota 2 open microphone:__
-Start Dota 2. Go to Settings>Audio>Voice: Select 'Open Mic' for team voice chat.
-![Dota 2 voice](https://github.com/derdanielb/Dota-2-Chat-Wheel-Soundboard/raw/master/readme/dota2_audiosetting_s.png "Dota 2 voice")
+Now everything is ready.
 
 ## Requirements
 - .NET 4.5.2
