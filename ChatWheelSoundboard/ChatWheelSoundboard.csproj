@@ -13,7 +13,9 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>F:\Programmieren\Visual Studio Projects\Publish\Soundboard\</PublishUrl>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>E:\release\ChatWheelSoundboard\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,13 +25,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -60,7 +60,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>icon_shout_8Gs_icon.ico</ApplicationIcon>
@@ -100,7 +100,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SoundMapping.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,7 +113,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ChatWheelSoundboard_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,32 +140,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sounds\TextFile1.txt" />
-    <None Include="Sounds\Chatwheel_all_dead.wav" />
-    <None Include="Sounds\Chatwheel_ay_ay_ay.wav" />
-    <None Include="Sounds\Chatwheel_bozhe_ti_posmotri.wav" />
-    <None Include="Sounds\Chatwheel_brutal.wav" />
-    <None Include="Sounds\Chatwheel_charge.wav" />
-    <None Include="Sounds\Chatwheel_crash_burn.wav" />
-    <None Include="Sounds\Chatwheel_cricket.wav" />
-    <None Include="Sounds\Chatwheel_Crowd_lv_02.wav" />
-    <None Include="Sounds\Chatwheel_crybaby.wav" />
-    <None Include="Sounds\Chatwheel_disastah.wav" />
-    <None Include="Sounds\Chatwheel_drum_roll.wav" />
-    <None Include="Sounds\Chatwheel_ehto_g_g.wav" />
-    <None Include="Sounds\Chatwheel_eto_prosto_netchto.wav" />
-    <None Include="Sounds\Chatwheel_frog.wav" />
-    <None Include="Sounds\Chatwheel_headshake.wav" />
-    <None Include="Sounds\Chatwheel_jia_you.wav" />
-    <None Include="Sounds\Chatwheel_patience.wav" />
-    <None Include="Sounds\Chatwheel_po_liang_lu.wav" />
-    <None Include="Sounds\Chatwheel_rimshot.wav" />
-    <None Include="Sounds\Chatwheel_sad_bone.wav" />
-    <None Include="Sounds\Chatwheel_tian_huo.wav" />
-    <None Include="Sounds\Chatwheel_wan_bu_liao_la.wav" />
-    <None Include="Sounds\Chatwheel_wow.wav" />
-    <None Include="Sounds\Chatwheel_zhil_do_konsta.wav" />
-    <None Include="Sounds\Chatwheel_zou_hao_bu_song.wav" />
+    <Content Include="Sounds\put avi in this folder.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="FodyWeavers.xml" />
     <Content Include="icon_shout_8Gs_icon.ico" />
   </ItemGroup>

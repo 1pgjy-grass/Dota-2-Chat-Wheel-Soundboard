@@ -31,10 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.inputListBox = new System.Windows.Forms.ListBox();
-            this.outputListBox = new System.Windows.Forms.ListBox();
-            this.soundLabel = new System.Windows.Forms.Label();
             this.inputLabel = new System.Windows.Forms.Label();
-            this.outputLabel = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -60,43 +57,22 @@
             this.num7label = new System.Windows.Forms.Label();
             this.num8label = new System.Windows.Forms.Label();
             this.num9label = new System.Windows.Forms.Label();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // inputListBox
             // 
             this.inputListBox.BackColor = System.Drawing.Color.White;
             this.inputListBox.FormattingEnabled = true;
-            this.inputListBox.Location = new System.Drawing.Point(334, 128);
+            this.inputListBox.ItemHeight = 12;
+            this.inputListBox.Location = new System.Drawing.Point(334, 118);
             this.inputListBox.Name = "inputListBox";
-            this.inputListBox.Size = new System.Drawing.Size(130, 95);
+            this.inputListBox.Size = new System.Drawing.Size(242, 148);
             this.inputListBox.TabIndex = 1;
             this.toolTip1.SetToolTip(this.inputListBox, "Select the device that corresponds to \'CABLE INPUT\'.\r\nIf you recently installed t" +
         "he driver this is ussually the last device.\r\nCheck sound manager if indicator li" +
-        "ghts up when a sound is played.\r\n\r\n");
-            this.inputListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // outputListBox
-            // 
-            this.outputListBox.FormattingEnabled = true;
-            this.outputListBox.Location = new System.Drawing.Point(334, 256);
-            this.outputListBox.Name = "outputListBox";
-            this.outputListBox.Size = new System.Drawing.Size(130, 95);
-            this.outputListBox.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.outputListBox, "Select the device for sound playback (for you to hear the sounds).\r\nUsually your " +
-        "current playback device is set to 0.\r\n");
-            this.outputListBox.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // soundLabel
-            // 
-            this.soundLabel.AutoSize = true;
-            this.soundLabel.BackColor = System.Drawing.Color.Transparent;
-            this.soundLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soundLabel.ForeColor = System.Drawing.Color.White;
-            this.soundLabel.Location = new System.Drawing.Point(39, 80);
-            this.soundLabel.Name = "soundLabel";
-            this.soundLabel.Size = new System.Drawing.Size(130, 18);
-            this.soundLabel.TabIndex = 3;
-            this.soundLabel.Text = "Sounds Mapping:";
+        "ghts up when a sound is played.\r\n\r\n");            
             // 
             // inputLabel
             // 
@@ -105,7 +81,7 @@
             this.inputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inputLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputLabel.ForeColor = System.Drawing.Color.White;
-            this.inputLabel.Location = new System.Drawing.Point(331, 112);
+            this.inputLabel.Location = new System.Drawing.Point(331, 103);
             this.inputLabel.Name = "inputLabel";
             this.inputLabel.Size = new System.Drawing.Size(133, 13);
             this.inputLabel.TabIndex = 4;
@@ -114,27 +90,13 @@
         "he driver this is ussually the last device.\r\nCheck sound manager if indicator li" +
         "ghts up when a sound is played.");
             // 
-            // outputLabel
-            // 
-            this.outputLabel.AutoSize = true;
-            this.outputLabel.BackColor = System.Drawing.Color.Transparent;
-            this.outputLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputLabel.ForeColor = System.Drawing.Color.White;
-            this.outputLabel.Location = new System.Drawing.Point(331, 240);
-            this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(127, 13);
-            this.outputLabel.TabIndex = 5;
-            this.outputLabel.Text = "Sound Playback Device (?)";
-            this.toolTip1.SetToolTip(this.outputLabel, "Select the device for sound playback (for you to hear the sounds).\r\nUsually your " +
-        "current playback device is set to 0.");
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(49, 9);
+            this.label1.Location = new System.Drawing.Point(49, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(403, 53);
+            this.label1.Size = new System.Drawing.Size(403, 49);
             this.label1.TabIndex = 6;
             // 
             // linkLabel1
@@ -144,7 +106,7 @@
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.ForeColor = System.Drawing.Color.White;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(66, 403);
+            this.linkLabel1.Location = new System.Drawing.Point(66, 372);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(113, 13);
             this.linkLabel1.TabIndex = 7;
@@ -158,9 +120,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(10, 403);
+            this.label2.Location = new System.Drawing.Point(10, 372);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 8;
             this.label2.Text = "Created by";
             // 
@@ -169,9 +131,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(10, 420);
+            this.label3.Location = new System.Drawing.Point(10, 388);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(312, 13);
+            this.label3.Size = new System.Drawing.Size(371, 12);
             this.label3.TabIndex = 9;
             this.label3.Text = "Background image and sounds are property of Valve Corporation";
             // 
@@ -179,9 +141,9 @@
             // 
             this.num0ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num0ddb.FormattingEnabled = true;
-            this.num0ddb.Location = new System.Drawing.Point(135, 113);
+            this.num0ddb.Location = new System.Drawing.Point(135, 104);
             this.num0ddb.Name = "num0ddb";
-            this.num0ddb.Size = new System.Drawing.Size(121, 21);
+            this.num0ddb.Size = new System.Drawing.Size(121, 20);
             this.num0ddb.TabIndex = 10;
             this.num0ddb.SelectionChangeCommitted += new System.EventHandler(this.num0ddb_SelectionChangeCommitted);
             // 
@@ -189,9 +151,9 @@
             // 
             this.num1ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num1ddb.FormattingEnabled = true;
-            this.num1ddb.Location = new System.Drawing.Point(135, 140);
+            this.num1ddb.Location = new System.Drawing.Point(135, 129);
             this.num1ddb.Name = "num1ddb";
-            this.num1ddb.Size = new System.Drawing.Size(121, 21);
+            this.num1ddb.Size = new System.Drawing.Size(121, 20);
             this.num1ddb.TabIndex = 10;
             this.num1ddb.SelectionChangeCommitted += new System.EventHandler(this.num1ddb_SelectionChangeCommitted);
             // 
@@ -199,9 +161,9 @@
             // 
             this.num2ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num2ddb.FormattingEnabled = true;
-            this.num2ddb.Location = new System.Drawing.Point(135, 167);
+            this.num2ddb.Location = new System.Drawing.Point(135, 154);
             this.num2ddb.Name = "num2ddb";
-            this.num2ddb.Size = new System.Drawing.Size(121, 21);
+            this.num2ddb.Size = new System.Drawing.Size(121, 20);
             this.num2ddb.TabIndex = 10;
             this.num2ddb.SelectionChangeCommitted += new System.EventHandler(this.num2ddb_SelectionChangeCommitted);
             // 
@@ -209,9 +171,9 @@
             // 
             this.num4ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num4ddb.FormattingEnabled = true;
-            this.num4ddb.Location = new System.Drawing.Point(135, 222);
+            this.num4ddb.Location = new System.Drawing.Point(135, 205);
             this.num4ddb.Name = "num4ddb";
-            this.num4ddb.Size = new System.Drawing.Size(121, 21);
+            this.num4ddb.Size = new System.Drawing.Size(121, 20);
             this.num4ddb.TabIndex = 10;
             this.num4ddb.SelectionChangeCommitted += new System.EventHandler(this.num4ddb_SelectionChangeCommitted);
             // 
@@ -219,9 +181,9 @@
             // 
             this.num5ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num5ddb.FormattingEnabled = true;
-            this.num5ddb.Location = new System.Drawing.Point(135, 249);
+            this.num5ddb.Location = new System.Drawing.Point(135, 230);
             this.num5ddb.Name = "num5ddb";
-            this.num5ddb.Size = new System.Drawing.Size(121, 21);
+            this.num5ddb.Size = new System.Drawing.Size(121, 20);
             this.num5ddb.TabIndex = 10;
             this.num5ddb.SelectionChangeCommitted += new System.EventHandler(this.num5ddb_SelectionChangeCommitted);
             // 
@@ -229,9 +191,9 @@
             // 
             this.num6ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num6ddb.FormattingEnabled = true;
-            this.num6ddb.Location = new System.Drawing.Point(135, 276);
+            this.num6ddb.Location = new System.Drawing.Point(135, 255);
             this.num6ddb.Name = "num6ddb";
-            this.num6ddb.Size = new System.Drawing.Size(121, 21);
+            this.num6ddb.Size = new System.Drawing.Size(121, 20);
             this.num6ddb.TabIndex = 10;
             this.num6ddb.SelectionChangeCommitted += new System.EventHandler(this.num6ddb_SelectionChangeCommitted);
             // 
@@ -239,9 +201,9 @@
             // 
             this.num7ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num7ddb.FormattingEnabled = true;
-            this.num7ddb.Location = new System.Drawing.Point(135, 303);
+            this.num7ddb.Location = new System.Drawing.Point(135, 280);
             this.num7ddb.Name = "num7ddb";
-            this.num7ddb.Size = new System.Drawing.Size(121, 21);
+            this.num7ddb.Size = new System.Drawing.Size(121, 20);
             this.num7ddb.TabIndex = 10;
             this.num7ddb.SelectionChangeCommitted += new System.EventHandler(this.num7ddb_SelectionChangeCommitted);
             // 
@@ -249,9 +211,9 @@
             // 
             this.num8ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num8ddb.FormattingEnabled = true;
-            this.num8ddb.Location = new System.Drawing.Point(135, 330);
+            this.num8ddb.Location = new System.Drawing.Point(135, 305);
             this.num8ddb.Name = "num8ddb";
-            this.num8ddb.Size = new System.Drawing.Size(121, 21);
+            this.num8ddb.Size = new System.Drawing.Size(121, 20);
             this.num8ddb.TabIndex = 10;
             this.num8ddb.SelectionChangeCommitted += new System.EventHandler(this.num8ddb_SelectionChangeCommitted);
             // 
@@ -259,9 +221,9 @@
             // 
             this.num9ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num9ddb.FormattingEnabled = true;
-            this.num9ddb.Location = new System.Drawing.Point(135, 357);
+            this.num9ddb.Location = new System.Drawing.Point(135, 330);
             this.num9ddb.Name = "num9ddb";
-            this.num9ddb.Size = new System.Drawing.Size(121, 21);
+            this.num9ddb.Size = new System.Drawing.Size(121, 20);
             this.num9ddb.TabIndex = 10;
             this.num9ddb.SelectionChangeCommitted += new System.EventHandler(this.num9ddb_SelectionChangeCommitted);
             // 
@@ -269,9 +231,9 @@
             // 
             this.num3ddb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.num3ddb.FormattingEnabled = true;
-            this.num3ddb.Location = new System.Drawing.Point(135, 194);
+            this.num3ddb.Location = new System.Drawing.Point(135, 179);
             this.num3ddb.Name = "num3ddb";
-            this.num3ddb.Size = new System.Drawing.Size(121, 21);
+            this.num3ddb.Size = new System.Drawing.Size(121, 20);
             this.num3ddb.TabIndex = 10;
             this.num3ddb.SelectionChangeCommitted += new System.EventHandler(this.num3ddb_SelectionChangeCommitted);
             // 
@@ -281,7 +243,7 @@
             this.num0label.BackColor = System.Drawing.Color.Transparent;
             this.num0label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num0label.ForeColor = System.Drawing.Color.White;
-            this.num0label.Location = new System.Drawing.Point(39, 114);
+            this.num0label.Location = new System.Drawing.Point(39, 105);
             this.num0label.Name = "num0label";
             this.num0label.Size = new System.Drawing.Size(83, 16);
             this.num0label.TabIndex = 11;
@@ -293,7 +255,7 @@
             this.num1label.BackColor = System.Drawing.Color.Transparent;
             this.num1label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num1label.ForeColor = System.Drawing.Color.White;
-            this.num1label.Location = new System.Drawing.Point(39, 141);
+            this.num1label.Location = new System.Drawing.Point(39, 130);
             this.num1label.Name = "num1label";
             this.num1label.Size = new System.Drawing.Size(83, 16);
             this.num1label.TabIndex = 11;
@@ -305,7 +267,7 @@
             this.num2label.BackColor = System.Drawing.Color.Transparent;
             this.num2label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num2label.ForeColor = System.Drawing.Color.White;
-            this.num2label.Location = new System.Drawing.Point(39, 168);
+            this.num2label.Location = new System.Drawing.Point(39, 155);
             this.num2label.Name = "num2label";
             this.num2label.Size = new System.Drawing.Size(83, 16);
             this.num2label.TabIndex = 11;
@@ -317,7 +279,7 @@
             this.num3label.BackColor = System.Drawing.Color.Transparent;
             this.num3label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num3label.ForeColor = System.Drawing.Color.White;
-            this.num3label.Location = new System.Drawing.Point(39, 195);
+            this.num3label.Location = new System.Drawing.Point(39, 180);
             this.num3label.Name = "num3label";
             this.num3label.Size = new System.Drawing.Size(83, 16);
             this.num3label.TabIndex = 11;
@@ -329,7 +291,7 @@
             this.num4label.BackColor = System.Drawing.Color.Transparent;
             this.num4label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num4label.ForeColor = System.Drawing.Color.White;
-            this.num4label.Location = new System.Drawing.Point(39, 223);
+            this.num4label.Location = new System.Drawing.Point(39, 206);
             this.num4label.Name = "num4label";
             this.num4label.Size = new System.Drawing.Size(83, 16);
             this.num4label.TabIndex = 11;
@@ -341,7 +303,7 @@
             this.num5label.BackColor = System.Drawing.Color.Transparent;
             this.num5label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num5label.ForeColor = System.Drawing.Color.White;
-            this.num5label.Location = new System.Drawing.Point(39, 250);
+            this.num5label.Location = new System.Drawing.Point(39, 231);
             this.num5label.Name = "num5label";
             this.num5label.Size = new System.Drawing.Size(83, 16);
             this.num5label.TabIndex = 11;
@@ -353,7 +315,7 @@
             this.num6label.BackColor = System.Drawing.Color.Transparent;
             this.num6label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num6label.ForeColor = System.Drawing.Color.White;
-            this.num6label.Location = new System.Drawing.Point(39, 277);
+            this.num6label.Location = new System.Drawing.Point(39, 256);
             this.num6label.Name = "num6label";
             this.num6label.Size = new System.Drawing.Size(83, 16);
             this.num6label.TabIndex = 11;
@@ -365,7 +327,7 @@
             this.num7label.BackColor = System.Drawing.Color.Transparent;
             this.num7label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num7label.ForeColor = System.Drawing.Color.White;
-            this.num7label.Location = new System.Drawing.Point(39, 304);
+            this.num7label.Location = new System.Drawing.Point(39, 281);
             this.num7label.Name = "num7label";
             this.num7label.Size = new System.Drawing.Size(83, 16);
             this.num7label.TabIndex = 11;
@@ -377,7 +339,7 @@
             this.num8label.BackColor = System.Drawing.Color.Transparent;
             this.num8label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num8label.ForeColor = System.Drawing.Color.White;
-            this.num8label.Location = new System.Drawing.Point(39, 331);
+            this.num8label.Location = new System.Drawing.Point(39, 306);
             this.num8label.Name = "num8label";
             this.num8label.Size = new System.Drawing.Size(83, 16);
             this.num8label.TabIndex = 11;
@@ -389,20 +351,56 @@
             this.num9label.BackColor = System.Drawing.Color.Transparent;
             this.num9label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num9label.ForeColor = System.Drawing.Color.White;
-            this.num9label.Location = new System.Drawing.Point(39, 358);
+            this.num9label.Location = new System.Drawing.Point(39, 330);
             this.num9label.Name = "num9label";
             this.num9label.Size = new System.Drawing.Size(83, 16);
             this.num9label.TabIndex = 11;
             this.num9label.Text = "NumPad 9:";
             // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.ForeColor = System.Drawing.Color.White;
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
+            this.linkLabel2.Location = new System.Drawing.Point(37, 67);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(180, 25);
+            this.linkLabel2.TabIndex = 12;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Sounds Mapping:";
+            this.toolTip1.SetToolTip(this.linkLabel2, "open sounds folder");
+            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.ForeColor = System.Drawing.Color.White;
+            this.linkLabel3.LinkColor = System.Drawing.Color.White;
+            this.linkLabel3.Location = new System.Drawing.Point(214, 71);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(53, 20);
+            this.linkLabel3.TabIndex = 13;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "reload";
+            this.toolTip1.SetToolTip(this.linkLabel3, "reload sounds folder");
+            this.linkLabel3.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(492, 438);
+            this.ClientSize = new System.Drawing.Size(588, 404);
+            this.Controls.Add(this.linkLabel3);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.num9label);
             this.Controls.Add(this.num8label);
             this.Controls.Add(this.num7label);
@@ -427,10 +425,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.inputLabel);
-            this.Controls.Add(this.soundLabel);
-            this.Controls.Add(this.outputListBox);
             this.Controls.Add(this.inputListBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -443,10 +438,7 @@
 
         #endregion
         private System.Windows.Forms.ListBox inputListBox;
-        private System.Windows.Forms.ListBox outputListBox;
-        private System.Windows.Forms.Label soundLabel;
         private System.Windows.Forms.Label inputLabel;
-        private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
@@ -472,6 +464,8 @@
         private System.Windows.Forms.Label num7label;
         private System.Windows.Forms.Label num8label;
         private System.Windows.Forms.Label num9label;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }
 
