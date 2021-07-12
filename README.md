@@ -1,7 +1,7 @@
 # Dota-2-Chat-Wheel-Soundboard
 This is a modification to [Dota-2-Chat-Wheel-Soundboard](https://github.com/derdanielb/Dota-2-Chat-Wheel-Soundboard) created by derdanielb. Now it gives you ability to specify sounds (avi format only) you want play in game.
 
-![Soundboard](./ChatWheelSoundboard/application.png "Soundboard")
+![Soundboard](https://raw.githubusercontent.com/1pgjy-grass/Dota-2-Chat-Wheel-Soundboard/master/readme/application.png "Soundboard")
 
 ## Installation
 For this setup two downloads are needed: The soundboard and an audio driver.
@@ -22,14 +22,14 @@ NOTE: Any other audio tool that can emulate playback sound to a recording source
 
 2. __set system's sound setting:__
 Right click the volumn icon in task bar to open sound setting dialog. Make sure virtual cable output is set as default device in recording tab. 
-![system-sound-setting-1](./ChatWheelSoundboard/system-sound-setting-1.png "system-sound-setting-1")</br>
-Also make sure your real audio device is set as default device in playback tab. ![system-sound-setting-2](./ChatWheelSoundboard/system-sound-setting-2.png "system-sound-setting-2")
+![system-sound-setting-1](https://raw.githubusercontent.com/1pgjy-grass/Dota-2-Chat-Wheel-Soundboard/master/readme/system-sound-setting-1.png "system-sound-setting-1")</br>
+Also make sure your real audio device is set as default device in playback tab. ![system-sound-setting-2](https://raw.githubusercontent.com/1pgjy-grass/Dota-2-Chat-Wheel-Soundboard/master/readme/system-sound-setting-2.png "system-sound-setting-2")
 
 3. __run chatWheelSoundboard.exe and config__
-![application-setting](./ChatWheelSoundboard/application-setting.png "application-setting")
+![application-setting](https://raw.githubusercontent.com/1pgjy-grass/Dota-2-Chat-Wheel-Soundboard/master/readme/application-setting.png "application-setting")
 
 4. __set dota2's audio setting__
-![dota2-audio-setting](./ChatWheelSoundboard/dota2-audio-setting.png "dota2-audio-setting")
+![dota2-audio-setting](https://raw.githubusercontent.com/1pgjy-grass/Dota-2-Chat-Wheel-Soundboard/master/readme/dota2-audio-setting.png "dota2-audio-setting")
 
 Now everything is ready.
 
