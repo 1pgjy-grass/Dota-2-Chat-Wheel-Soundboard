@@ -7,7 +7,7 @@ This is a modification to [Dota-2-Chat-Wheel-Soundboard](https://github.com/derd
 For this setup two downloads are needed: The soundboard and an audio driver.
 ### Downloads
 
-1. Download the precompiled [Chat Wheel Soundboard](./ChatWheelSoundboard.zip)
+1. Download the precompiled [Chat Wheel Soundboard](https://github.com/1pgjy-grass/Dota-2-Chat-Wheel-Soundboard/releases/download/v1.1/ChatWheelSoundboard.zip)
 2. Download the tool [VB-Audio Virtual Cable](https://vb-audio.com/Cable/index.htm)
 (Any other audio tool that can send playback sound to a recording device will work)
 
